@@ -1,0 +1,12 @@
+clang++ \
+-O3 \
+-march=native \
+-mtune=native \
+-flto \
+-funroll-loops \
+-fomit-frame-pointer \
+-fno-math-errno \
+-fno-trapping-math \
+-fvectorize \
+-fslp-vectorize costas.cpp \
+-o costas.out
